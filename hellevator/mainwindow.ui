@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>636</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+    font-family: &quot;Courier New&quot;;
+}
+
+QMainWindow {
+    background-color: #fff0f5;
+}
+
+QWidget {
+    background-color: #fff0f5;
+}
+
+QWidget#centralwidget {
+    background-color: #fff0f5;
+}
+
+QGroupBox {
+    background-color: #ffe4ec;
+    border: 1px solid #ffb6c1;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8b3a62;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 5px;
+    color: #8b3a62;
+}
+
+QLabel {
+    font-size: 13px;
+    color: #5c2d4f;
+}
+
+QPushButton {
+    background-color: #ffccd5;
+    border: 1px solid #ffb3ba;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5c2d4f;
+}
+
+QPushButton:hover {
+    background-color: #ffb3ba;
+    color: white;
+}
+
+QPushButton:pressed {
+    background-color: #ff99aa;
+}
+
+QSpinBox {
+    background-color: #fff0f5;
+    border: 1px solid #ffb6c1;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 13px;
+    color: #5c2d4f;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="0">
+     <widget class="QWidget" name="els_widget" native="true">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>ВИЗУАЛИЗАЦИЯ ШАХТ</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="9" column="2">
+           <widget class="QLabel" name="floor_1_el_2">
+            <property name="text">
+             <string>____||____</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="floor_5">
+            <property name="text">
+             <string>5 этаж</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="floor_6">
+            <property name="text">
+             <string>6 этаж</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="floor_1">
+            <property name="text">
+             <string>1 этаж</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="floor_7_el_1">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="floor_9_el_2">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="floor_7_el_2">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="2">
+           <widget class="QLabel" name="floor_3_el_2">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLabel" name="floor_2_el_1">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="floor_2">
+            <property name="text">
+             <string>2 этаж</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="floor_7">
+            <property name="text">
+             <string>7 этаж</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="floor_8_el_1">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLabel" name="floor_5_el_2">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLabel" name="floor_4_el_2">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="floor_8_el_2">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="2">
+           <widget class="QLabel" name="floor_2_el_2">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="floor_6_el_1">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLabel" name="floor_3_el_1">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="floor_3">
+            <property name="text">
+             <string>3 этаж</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="floor_6_el_2">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="floor_9">
+            <property name="text">
+             <string>9 этаж</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="floor_4">
+            <property name="text">
+             <string>4 этаж</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QLabel" name="floor_1_el_1">
+            <property name="text">
+             <string>____||____</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="floor_5_el_1">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLabel" name="floor_4_el_1">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="floor_9_el_1">
+            <property name="text">
+             <string>__________</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="floor_8">
+            <property name="text">
+             <string>8 этаж</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>лифт 1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="2">
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>лифт 2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="el_1_dir_on_display">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="el_2_dir_on_display">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="el_1_conditions_box">
+         <property name="title">
+          <string>ЛИФТ 1</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Manager:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Controller:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Cabin:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Doors:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Cur floor:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>Target:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>Direction:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>Queue:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="el_1_manager">
+              <property name="text">
+               <string>IDLE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_1_controller">
+              <property name="text">
+               <string>FREE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_1_cabin">
+              <property name="text">
+               <string>IDLE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_1_doors">
+              <property name="text">
+               <string>CLOSED</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_1_cur_floor">
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_1_target">
+              <property name="text">
+               <string>-</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_1_direction">
+              <property name="text">
+               <string>-</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_1_queue">
+              <property name="text">
+               <string>[]</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QGroupBox" name="el_2_conditions_box">
+         <property name="title">
+          <string>ЛИФТ 2</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>Manager:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>Controller:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_21">
+              <property name="text">
+               <string>Cabin:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_22">
+              <property name="text">
+               <string>Doors:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_23">
+              <property name="text">
+               <string>Cur floor:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_24">
+              <property name="text">
+               <string>Target:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_25">
+              <property name="text">
+               <string>Direction:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_26">
+              <property name="text">
+               <string>Queue:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QLabel" name="el_2_manager">
+              <property name="text">
+               <string>IDLE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_2_controller">
+              <property name="text">
+               <string>FREE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_2_cabin">
+              <property name="text">
+               <string>IDLE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_2_doors">
+              <property name="text">
+               <string>CLOSED</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_2_cur_floor">
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_2_target">
+              <property name="text">
+               <string>-</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_2_direction">
+              <property name="text">
+               <string>-</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="el_2_queue">
+              <property name="text">
+               <string>[]</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>ВЫЗОВ С ЭТАЖА</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Этаж:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QSpinBox" name="floor_spin_box">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>9</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="floor_call">
+            <property name="text">
+             <string>вызвать лифт</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="elevate_1_box">
+         <property name="title">
+          <string>ЛИФТ 1</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="el_1_1_btn">
+            <property name="text">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="el_1_3_btn">
+            <property name="text">
+             <string>3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="el_1_4_btn">
+            <property name="text">
+             <string>4</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="el_1_6_btn">
+            <property name="text">
+             <string>6</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="el_1_7_btn">
+            <property name="text">
+             <string>7</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="el_1_9_btn">
+            <property name="text">
+             <string>9</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2" colspan="2">
+           <widget class="QPushButton" name="el_1_close_doors_btn">
+            <property name="text">
+             <string>&gt;|&lt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QPushButton" name="el_1_open_doors_btn">
+            <property name="text">
+             <string>&lt;|&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QPushButton" name="el_1_8_btn">
+            <property name="text">
+             <string>8</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="2">
+           <widget class="QPushButton" name="el_1_5_btn">
+            <property name="text">
+             <string>5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QPushButton" name="el_1_2_btn">
+            <property name="text">
+             <string>2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGroupBox" name="elevate_2_box">
+         <property name="title">
+          <string>ЛИФТ 2</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="1" colspan="2">
+           <widget class="QPushButton" name="el_2_5_btn">
+            <property name="text">
+             <string>5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="el_2_3_btn">
+            <property name="text">
+             <string>3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QPushButton" name="el_2_8_btn">
+            <property name="text">
+             <string>8</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="el_2_4_btn">
+            <property name="text">
+             <string>4</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="el_2_6_btn">
+            <property name="text">
+             <string>6</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="el_2_1_btn">
+            <property name="text">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="el_2_9_btn">
+            <property name="text">
+             <string>9</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="el_2_7_btn">
+            <property name="text">
+             <string>7</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QPushButton" name="el_2_2_btn">
+            <property name="text">
+             <string>2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2" colspan="2">
+           <widget class="QPushButton" name="el_2_close_doors_btn">
+            <property name="text">
+             <string>&gt;|&lt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QPushButton" name="el_2_open_doors_btn">
+            <property name="text">
+             <string>&lt;|&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>828</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
